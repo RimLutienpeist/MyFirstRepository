@@ -1,1 +1,24 @@
+/*
+<ul>
+        <li>项目一</li>
+        <li class="special">项目二</li>
+        <li>项目 <em>三</em></li>
+      </ul>
+*/
 
+
+li.special,
+span.special {
+  color: orange;
+  font-weight: bold;
+}
+
+li em {
+  color: rebeccapurple;
+}
+
+/*在 HTML 文档中设置直接出现在标题后面并且与标题具有相同层级的段落样式，
+  为此需在两个选择器之间添加一个 + 号 (成为 相邻选择符)*/
+h1 + p {
+  font-size: 200%;
+}
