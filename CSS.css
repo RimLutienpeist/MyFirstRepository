@@ -49,3 +49,24 @@ body h1 + p .special {
   background-color: black;
   padding: 5px;
 }
+
+/* 在像 padding 和 margin 这样的 4 值简写语法中，
+   数值的应用顺序是上、右、下、左（从顶部顺时针方向）。
+   也有其他的简写类型，例如 2 值简写，
+   它为顶部/底部设置 padding/margin，然后是左侧/右侧 */
+padding: 10px 15px 15px 5px;
+/*与这四行代码是等价的：*/
+padding-top: 10px;
+padding-right: 15px;
+padding-bottom: 15px;
+padding-left: 5px;
+
+/*这一行代码：*/
+background: red url(bg-graphic.png) 10px 10px repeat-x fixed;
+/*与这五行代码是等价的：*/
+background-color: red;
+background-image: url(bg-graphic.png);
+background-position: 10px 10px;
+background-repeat: repeat-x;
+background-attachment: fixed;
+                
