@@ -22,3 +22,30 @@ li em {
 h1 + p {
   font-size: 200%;
 }
+
+/*下面的 CSS 代码使得没有被访问的链接颜色变为粉色、访问过的链接变为绿色。*/
+a:link {
+  color: pink;
+}
+
+a:visited {
+  color: green;
+}
+
+/*你可以改变链接被鼠标悬停的时候的样式，例如移除下划线，下面的代码就实现了这个功能。*/
+a:hover {
+  text-decoration: none;
+}
+
+/* selects any <span> that is inside a <p>, which is inside an <article>  */
+article p span { ... }
+
+/* selects any <p> that comes directly after a <ul>, which comes directly after an <h1>  */
+h1 + ul + p { ... }
+
+/*上面的代码为以下元素建立样式：在 <body> 之内，紧接在 <h1> 后面的 <p> 元素的内部，类名为 special。*/
+body h1 + p .special {
+  color: yellow;
+  background-color: black;
+  padding: 5px;
+}
