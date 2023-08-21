@@ -69,7 +69,10 @@ background-image: url(bg-graphic.png);
 background-position: 10px 10px;
 background-repeat: repeat-x;
 background-attachment: fixed;
-                
+
+
+
+             
 /* font */
 {font-family:Helvetica, Arial, sans-serif;
 font-size:10px;
@@ -126,3 +129,79 @@ font:
   italic normal bold normal 3em/1.5 Helvetica,
   Arial,
   sans-serif;
+
+
+
+
+                
+/* lists-style */
+list-style-type：设置用于列表的项目符号的类型，例如无序列表的方形或圆形项目符号，或有序列表的数字、字母或罗马数字。
+list-style-position：设置在每个项目开始之前，项目符号是出现在列表项内，还是出现在其外。
+list-style-image：允许为项目符号使用自定义图片，而不是简单的方形或圆形。
+
+/* use backgrounf --> list-style-type */
+ul {
+  padding-left: 2rem;
+  list-style-type: none;
+}
+
+ul li {
+  padding-left: 2rem;
+  background-image: url(star.svg);
+  background-position: 0 0;
+  background-size: 1.6rem 1.6rem;
+  background-repeat: no-repeat;
+}
+
+
+/* 上述提到的三种属性可以用一个单独的简写属性 list-style 来设置。
+                例如，以下 CSS：*/
+ul {
+  list-style-type: square;
+  list-style-image: url(example.png);
+  list-style-position: inside;
+}
+可以被如下方式代替：
+ul {
+  list-style: square url(example.png) inside;
+}                
+
+
+/* start 属性允许你从 1 以外的数字开始计数。以下示例：
+ */
+<ol start="4">
+  <li>Toast pita, leave to cool, then slice down the edge.</li>
+  <li>
+    Fry the halloumi in a shallow, non-stick pan, until browned on both sides.
+  </li>
+  <li>Wash and chop the salad.</li>
+  <li>Fill pita with salad, hummus, and fried halloumi.</li>
+</ol>
+
+
+/* reversed 属性将使列表反向计数。以下示例：
+ */
+<ol start="4" reversed>
+  <li>Toast pita, leave to cool, then slice down the edge.</li>
+  <li>
+    Fry the halloumi in a shallow, non-stick pan, until browned on both sides.
+  </li>
+  <li>Wash and chop the salad.</li>
+  <li>Fill pita with salad, hummus, and fried halloumi.</li>
+</ol>
+
+
+/* value 属性允许设置列表项指定数值，以下示例：
+ */
+<ol>
+  <li value="2">Toast pita, leave to cool, then slice down the edge.</li>
+  <li value="4">
+    Fry the halloumi in a shallow, non-stick pan, until browned on both sides.
+  </li>
+  <li value="6">Wash and chop the salad.</li>
+  <li value="8">Fill pita with salad, hummus, and fried halloumi.</li>
+</ol>
+
+
+
+                
